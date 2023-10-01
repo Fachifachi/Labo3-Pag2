@@ -88,6 +88,20 @@ main {
     backdrop-filter: blur(16px) saturate(180%);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
+    transition: transform 0.2s ease-in-out;
+}
+.price-card:hover {
+    /* Aplica un aumento de escala al pasar el mouse */
+    transform: scale(1.05);
+}
+
+/* Estilo para el plan recomendado */
+.recommended-label {
+    /* Estilos anteriores del plan recomendado */
+
+    /* Asegúrate de que se muestre sobre las otras tarjetas */
+    position: relative;
+    z-index: 1;
 }
 .price-text{
     margin: 0;
@@ -103,6 +117,13 @@ main {
     justify-items: center;
     text-align: center;
     font-size: 25px;
+ }
+ .music-img{
+    display: none;
+    width: 15vh;
+ }
+ .music-img-pc{
+    width: 8vh;
  }
  .text-secondary-1,.text-secondary-2{
     display: flex;
@@ -222,11 +243,17 @@ main {
     .price-card {
         width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
         margin: 10px 0; /* Agrega espacio entre las tarjetas */
-        height: 80vh;
+        height: 90vh;
         border-radius: 5%;
         display: flex;
         flex-direction: column;
+        transition: none;
     }
+    .price-card:hover {
+        /* Aplica un aumento de escala al pasar el mouse */
+        transform: none;
+    }
+    
     .text-center{
         display: flex;
         flex-direction: column; /* Cambia la dirección de flexión a columna */
@@ -239,6 +266,13 @@ main {
         font-size: 25px;
         margin: 10% 0 0 0;
      }
+     .music-img{
+        display: flex;
+        width: 40vh;
+     }
+     .music-img-pc{
+        display: none;
+     }
      .text-secondary-1,.text-secondary-2{
         display: flex;
         flex-direction: column; /* Cambia la dirección de flexión a columna */
@@ -246,6 +280,7 @@ main {
         margin: auto;
         font-size: 30px;
         width: 80%;
+        text-align: left;
      }
      .btn{
         margin-bottom: 10%;
