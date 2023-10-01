@@ -1,7 +1,7 @@
 
  body{
     margin: 0 10% 0 10%;
-    background-color: #007bff;
+
 
  }
  h1{
@@ -19,8 +19,8 @@
     display: flex;
     margin: auto;
     background-color: rgba(239, 243, 255, 0.692);
-    width: 1000px;
-    height: 17vh; 
+    width: 90000px;
+    height: 20vh; 
     align-items: center;
     margin-top: 3%;
     transition: margin 0.5s; /* Agrega una transición suave al margen */
