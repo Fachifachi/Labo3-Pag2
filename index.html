@@ -7,18 +7,33 @@
     <title>Pricing Table</title>
     <link rel="icon" href="img\spotify.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <header class="header">
-    <img class="logo" src="img\Spotify_Logo.png">
-    <nav class="nav-menu">
+<nav>
+    <img class="logo-2" src="img\Spotify_Logo.png">
+    <input type="checkbox" id="hamburger" />
+    <label for="hamburger">
+      <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+    </label>
     <ul>
-        <li><a href="#">Premium</a></li>
-        <li><a href="#">Ayuda</a></li>
-        <li><a href="#">Descargar</a></li>
-        <li><a href="#">Registrarse</a></li>
-        <li><a href="#">Iniciar sesión</a></li>
+      <li>
+        <a href="#home" class="active">Premium</a>
+      </li>
+      <li>
+        <a href="#about">Ayuda</a>
+      </li>
+      <li>
+        <a href="#features">Descargar</a>
+      </li>
+      <li>
+        <a href="#services">Registrarse</a>
+      </li>
+      <li>
+        <a href="#FAQ">Iniciar sesión</a>
+      </li>
     </ul>
-</nav>
+  </nav>
 </header>
 <body>
     <h1>Elegí tu plan Premium</h1>
@@ -34,14 +49,14 @@
                 <small class="text-secondary">Month</small>
             </div>
             <div class="text-secondary-1">
-                <small class="d-block">1 cuenta</small>
-                <small class="d-block my-3">Música sin anuncios</small>
-                <small class="d-block">Reproducción on-demand</small>
+                <small class="d-block"> <i class="fa-regular fa-circle-check"></i> 1 cuenta</small>
+                <small class="d-block my-3"> <i class="fa-solid fa-check"></i>Música sin anuncios</small>
+                <small class="d-block"> <i class="fa-regular fa-square-check"></i>Reproducción on-demand</small>
             </div>
             <div class="text-secondary-2">
-                <small class="d-block">Descuento para estudiantes universitarios</small>
-                <small class="d-block my-3">Escuchá tus canciones en cualquier lugar</small>
-                <small class="d-block">24/7 Support</small>
+                <small class="d-block"><i class="fa-solid fa-play"></i> Descuento para estudiantes universitarios</small>
+                <small class="d-block my-3"><i class="fa-regular fa-circle-play"></i>Escuchá tus canciones en cualquier lugar</small>
+                <small class="d-block"><i class="fa-solid fa-circle-play"></i> 24/7 Support</small>
             </div>
             <div class="text-center">
                 <a href="#" class="btn">Empezar</a>
@@ -119,7 +134,7 @@
             <li>Proveedores</li>
         </ul>
     </div>
-    <div class="footer-section">
+    <ul class="ul-footer">
         <h4>ENLACES ÚTILES</h4>
         <ul>
             <li>Ayuda</li>

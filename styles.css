@@ -4,47 +4,53 @@ body{
     padding: 0;
 background-color: rgba(239,239,239,255);
 }
-.header {
-    background-color: #000000;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1% 7% 1% 7%;
-}
 
-/* Estilos para el logo */
-
-/* Estilos para el menú de navegación */
-.nav-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    font-size: 20px;
-
-}
-
-.nav-menu li {
-    margin-right: 20px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.logo{
-    width: 150px;
-}
 
 /* Estilos adicionales para el contenido principal */
 main {
     padding: 20px;
 }
-
+.header nav {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 1em;
+  }
+  .header nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  .header #logo {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .header input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  .header  label {
+    display: none;
+    cursor: pointer;
+  }
+  .header ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+  }
+  .header ul a {
+    padding: 0.5em;
+  }
+  .header ul a:hover {
+    background-color: #000000;
+    border-radius: 0.5em;
+  }
+  
+  .active {
+   
+  }
 /* Estilos para el enlace en el pie de página (opcional) */
 
 /* Estilos para enlace en hover (opcional) */
@@ -235,20 +241,37 @@ main {
     }
 }
 @media (max-width: 870px) {
-    .header{
-        padding: 3% 7% 3% 7%;
-    }
-    .nav-menu {
-        display: none;
-    }
-    .logo{
- 
-        padding-right: 60%;
-    }
-    .pricing-table {
-        flex-direction: column; /* Cambia la dirección de flexión a columna */
-        align-items: center; /* Centra las tarjetas horizontalmente */
-    }
+   
+    .header label {
+        display: block;
+      }
+      .header ul {
+        font-size: 1.2em;
+        position: absolute;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        gap: 2em;
+        top: 60px;
+        width: 40%;
+        height: calc(100vh - 60px);
+        transition: 0.5s;
+      }
+      .header input[type="checkbox"]:checked ~ ul {
+        left: 0;
+      }
+      .header ul a:hover {
+        background-color: #2c8eec;
+      }
+        .header nav {
+         display: flex;
+    position: relative;
+    top: 0; /* Alinea el navbar en la parte superior */
+    background-color: #000000;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
 
     .price-card {
         width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
@@ -258,6 +281,7 @@ main {
         display: flex;
         flex-direction: column;
         transition: none;
+        
     }
     .price-card:hover {
         /* Aplica un aumento de escala al pasar el mouse */
