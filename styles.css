@@ -110,6 +110,23 @@ main {
  .d-block{
     width: 100%;
  }
+ .price-card.recommended {
+    border: 2px solid #1ED760; /* Borde de color naranja */
+    box-shadow: 0 0 10px rgba(235, 233, 231, 0.5); /* Sombra de color naranja */
+}
+
+/* Estilos para la etiqueta "Recomendado" */
+.recommended-label {
+    background-color:  #1ED760; /* Fondo de color naranja */
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 20px;
+    z-index: 1;
+}
  .btn {
     text-decoration: none;
     background-color: black;
@@ -127,6 +144,53 @@ main {
 .btn:hover {
     background-color: white;
     color: black;
+}
+.footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+   padding: 4% 20% 7% 20%;
+}
+
+.footer-section {
+
+    font-size: 15px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li {
+    margin-bottom: 5px;
+}
+.logo-2{
+    width: 20vh;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 870px) {
     .logo{
