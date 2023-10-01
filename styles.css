@@ -89,6 +89,7 @@ main {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     transition: transform 0.2s ease-in-out;
+
 }
 .price-card:hover {
     /* Aplica un aumento de escala al pasar el mouse */
@@ -117,13 +118,21 @@ main {
     justify-items: center;
     text-align: center;
     font-size: 25px;
+
  }
  .music-img{
     display: none;
     width: 15vh;
+
+
  }
  .music-img-pc{
+    display: flex;
     width: 8vh;
+    margin-left: 5%;
+
+    
+
  }
  .text-secondary-1,.text-secondary-2{
     display: flex;
@@ -136,6 +145,7 @@ main {
     justify-items: center;
     text-align: center;
     font-size: 25px;
+
  }
  .d-block{
     width: 100%;
