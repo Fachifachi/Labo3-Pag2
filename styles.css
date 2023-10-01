@@ -5,18 +5,39 @@ body{
 background-color: rgba(239,239,239,255);
 }
 .header {
-    background-color: black;
+    background-color: #000000;
     color: white;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 7% 1% 7%;
 }
 
-.header h1 {
+/* Estilos para el logo */
+
+/* Estilos para el menú de navegación */
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
+    display: flex;
+    font-size: 20px;
+
 }
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 .logo{
     width: 150px;
-    padding-right: 78%;
 }
 
 /* Estilos adicionales para el contenido principal */
@@ -139,13 +160,14 @@ main {
   
     display: flex;
     justify-content: space-between;
-   padding: 4% 20% 7% 20%;
+   padding: 4% 7% 7% 7%;
 }
 
 .footer-section {
     font-size: 15px;
     flex: 1;
     margin-right: 20px;
+
 }
 
 .footer h4 {
@@ -156,6 +178,7 @@ main {
 .footer ul {
     list-style-type: none;
     padding: 0;
+    
 }
 
 .footer li {
@@ -166,6 +189,7 @@ main {
     height: 6vh;
     align-items: center;
     justify-content: center;
+    padding-right: 10%;
     
 }
 
@@ -180,6 +204,12 @@ main {
     }
 }
 @media (max-width: 870px) {
+    .header{
+        padding: 3% 7% 3% 7%;
+    }
+    .nav-menu {
+        display: none;
+    }
     .logo{
  
         padding-right: 60%;
