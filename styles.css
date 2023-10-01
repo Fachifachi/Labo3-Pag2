@@ -1,0 +1,113 @@
+
+ body{
+    margin: 0 10% 0 10%;
+ }
+ h1{
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+ }
+ .pricing-table{
+   display: flex;
+    flex-wrap: wrap;
+    transition: margin 0.5s; /* Agrega una transición suave al margen */
+    box-sizing: border-box; /* Asegura que el relleno no afecte el ancho */
+ }
+ .price-card{
+    display: flex;
+    margin: auto;
+    background-color: rgba(239, 243, 255, 0.692);
+    width: 1000px;
+    height: 17vh; 
+    align-items: center;
+    margin-top: 3%;
+    transition: margin 0.5s; /* Agrega una transición suave al margen */
+    box-sizing: border-box; /* Asegura que el relleno no afecte el ancho */
+ }
+ .text-center{
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    margin: auto;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+ }
+ .text-secondary-1,.text-secondary-2{
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    margin: auto;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+ }
+ .d-block{
+    width: 100%;
+ }
+ .btn{
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el espaciado interior para el tamaño del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    text-align: center; /* Centra el texto horizontalmente */
+    text-decoration: none; /* Elimina el subrayado de los enlaces (si es un enlace) */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    justify-content: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    margin: auto;
+    width: 50%;
+    height: 10%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+ }
+
+
+/* Cambiar estilo al pasar el ratón por encima del botón */
+.btn:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+}
+
+/* Estilo adicional para botón secundario (si es necesario) */
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+/* Cambiar estilo al pasar el ratón por encima del botón secundario */
+.btn-secondary:hover {
+    background-color: #495057;
+}
+
+/* Estilo para un botón de tamaño pequeño */
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Estilo para un botón de tamaño grande */
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+@media (max-width: 800px) {
+    .pricing-table {
+        flex-direction: column; /* Cambia la dirección de flexión a columna */
+        align-items: center; /* Centra las tarjetas horizontalmente */
+    }
+
+    .price-card {
+        width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
+        margin: 10px 0; /* Agrega espacio entre las tarjetas */
+        height: 80vh;
+    }
+}
