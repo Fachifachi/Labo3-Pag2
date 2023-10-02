@@ -203,41 +203,62 @@ p {
   /* Fondo blanco */
   position: fixed;
   /* Para posicionar el círculo dentro de la tarjeta */
-  margin-top: -16%;
-  margin-left: 103%;
+  margin-top: -200px;
+  margin-left: 95%;
 
 
 
   /* Ajusta el relleno según tus necesidades */
 }
-
-/* Estilo para el círculo */
-.highlighted::before {
-  content: "\f004";
-  /* Código del ícono "crown" en Font Awesome 6 */
-  font-family: "Font Awesome 6 Free";
-  /* Nombre de la fuente de íconos */
-  background-color: #1ED760;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  position: absolute;
-  top: -10%;
-  right: -1%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  /* Color del ícono */
-  font-size: 24px;
-  /* Tamaño del ícono */
+.highlighted-card {
+  background-color: #1ED760; /* Cambia el color de fondo */
+  border: 2px solid #1ED760; /* Agrega un borde */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+  color: white; /* Cambia el color del texto para que sea legible en el fondo verde */
+  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al pasar el mouse */
 }
+/* Estilo para el círculo */
 
-.highlighted .btn {
-  margin-right: -33px;
+  .highlighted::before {
+    content: "\2b";
+    /* Código del ícono "crown" en Font Awesome 6 */
+    font-family: "Font Awesome 6 Free";
+    /* Nombre de la fuente de íconos */
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: 35%;
+    border: 2px solid #ffffff; /* Agrega un borde */
+    right: 98%;
+    /* Color del ícono */
+  
+    /* Tamaño del ícono */
+  font-size: 25px;
+    width: 70px;
+    height: 70px;
+  
+    background-color: #1ED760;
+    cursor: pointer;
+  }
+
+.highlighted btn{
   font-size: 20px;
 }
-
+.price-card:nth-child(1):hover .highlighted::before {
+  content: "\f144"; /* Cambia el contenido del ícono */
+  background-color: #1ED760; /* Cambia el color de fondo del círculo */
+}
+.price-card:nth-child(2):hover .highlighted::before {
+  content: "\f144"; /* Cambia el contenido del ícono */
+  background-color: #1ED760; /* Cambia el color de fondo del círculo */
+}
+.price-card:nth-child(3):hover .highlighted::before {
+  content: "\f144"; /* Cambia el contenido del ícono */
+  background-color: #1ED760; /* Cambia el color de fondo del círculo */
+}
 .btn {
   align-items: center;
   text-decoration: none;
@@ -254,6 +275,7 @@ p {
   transition: background-color 0.3s, color 0.3s;
   /* Transición suave para el hover */
 }
+
 
 /* Estilos para el hover */
 .btn:hover {
@@ -302,15 +324,46 @@ p {
   padding-right: 10%;
 
 }
+@media (max-width: 1600px) {
+  
+  
+.highlighted::before {
+  content: "\2b";
+  /* Código del ícono "crown" en Font Awesome 6 */
+  font-family: "Font Awesome 6 Free";
+  /* Nombre de la fuente de íconos */
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: 36%;
+  right: 98%;
+  /* Color del ícono */
 
+  /* Tamaño del ícono */
+font-size: 25px;
+  width: 50px;
+  height: 50px;
+
+  background-color: #1ED760;
+}
+}
 @media (max-width: 1120px) {
 
   .music-img-pc {
     display: none;
   }
 
-}
+  
 
+}
+@media (max-width: 1040px) {
+.highlighted{
+ display: none;
+}
+}
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -382,11 +435,11 @@ p {
 
   .highlighted::before {
 
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     position: absolute;
-    top: -1%;
+ 
     right: -4%;
     z-index: 1;
 
@@ -397,7 +450,8 @@ p {
     /* Fondo blanco */
     position: fixed;
     /* Para posicionar el círculo dentro de la tarjeta */
-    margin-top: -1%;
+    top: 15%;
+    right: 3%;
   }
 
   .btn {
