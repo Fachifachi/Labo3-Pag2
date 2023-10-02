@@ -97,7 +97,7 @@ main {
     transition: margin 0.5s; /* Agrega una transición suave al margen */
     box-sizing: border-box; /* Asegura que el relleno no afecte el ancho */
     backdrop-filter: blur(16px) saturate(180%);
-    border-radius: 12px;
+    border-radius: 50px;
     border: 1px solid rgba(255, 255, 255, 0.125);
     transition: transform 0.2s ease-in-out;
 
@@ -308,6 +308,7 @@ main {
         margin: 10% 0 5% 0;
      }
      .music-img{
+      width: 100%;
         display: flex;
         width: 40vh;
      }
