@@ -164,10 +164,29 @@ main {
  .d-block{
     width: 100%;
  }
- .price-card.highlighted {
- 
-  
-  box-shadow: 0 0 10px #1ED760; /* Agrega una sombra amarilla (o el color que desees) */
+ .highlighted {
+  background-color: white; /* Fondo blanco */
+  position: relative; /* Para posicionar el círculo dentro de la tarjeta */
+  padding: 20px; /* Ajusta el relleno según tus necesidades */
+}
+
+/* Estilo para el círculo */
+.highlighted::before {
+  content: "\f25b"; /* Código del ícono "crown" en Font Awesome 6 */
+  font-family: "Font Awesome 6 Free"; /* Nombre de la fuente de íconos */
+  background-color: #1ED760;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  right: -1%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Color del ícono */
+  font-size: 24px; /* Tamaño del ícono */
 }
 
  .btn {
@@ -283,6 +302,17 @@ main {
   margin-right: 7%;
   font-size: 30px;
  }
+ .highlighted::before {
+  
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: -1%;
+  right: -4%;
+  z-index: 1;
+
+}
     .price-card {
         width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
         margin: 10px 0; /* Agrega espacio entre las tarjetas */
