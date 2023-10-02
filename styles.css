@@ -54,9 +54,9 @@ main {
     width: 200px;
     margin-left: 7%;
   }
-  .active {
-   
-  }
+  .header nav a:hover {
+    color: #1ED760; /* Cambia el color de la fuente a verde */
+}
 /* Estilos para el enlace en el pie de página (opcional) */
 
 /* Estilos para enlace en hover (opcional) */
