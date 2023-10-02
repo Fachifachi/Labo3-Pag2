@@ -17,6 +17,7 @@ main {
     justify-content: space-between;
     background-color: #000000;
     padding: 1em;
+    font-family: 'Roboto', sans-serif;
   }
   .header nav a {
     text-decoration: none;
@@ -65,17 +66,20 @@ main {
     justify-items: center;
     text-align: center;
     font-size: 50px;
+    font-family: 'Roboto', sans-serif;
  }
  h2{
     align-items: center;
     justify-items: center;
     text-align: center;
-    font-size: 38px;
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
  }
  p{
     align-items: center;
     justify-items: center;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
  }
  .pricing-table{
     width: 85%;
@@ -199,6 +203,7 @@ main {
     font-size: 15px;
     flex: 1;
     margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -263,9 +268,7 @@ main {
       .header input[type="checkbox"]:checked ~ ul {
         left: 0;
       }
-      .header ul a:hover {
-        background-color: #1ED760;
-      }
+
         .header nav {
          display: flex;
     position: relative;
