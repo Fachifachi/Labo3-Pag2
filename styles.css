@@ -133,7 +133,6 @@ main {
  }
  .music-img{
     display: none;
-    width: 15vh;
 
 
  }
@@ -150,11 +149,11 @@ main {
     flex-direction: column; /* Cambia la dirección de flexión a columna */
     justify-content: center; /* Centra verticalmente el contenido */
     margin: auto;
-    width: 25%;
-    height: 100%;
+    width: 30%;
+    height: 30%;
     align-items: center;
     justify-items: center;
-    text-align: center;
+    text-align: left;;
     font-size: 25px;
 
  }
@@ -202,7 +201,8 @@ main {
   
     display: flex;
     justify-content: space-between;
-   padding: 4% 7% 7% 7%;
+   padding: 4% 7% 0% 7%;
+   margin: 0 7% 0 7%S 0;
 }
 
 .footer-section {
@@ -234,7 +234,13 @@ main {
     padding-right: 10%;
     
 }
+@media (max-width: 1120px) {
 
+  .music-img-pc{
+    margin-left: 1%;
+  }
+
+}
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
@@ -277,11 +283,17 @@ main {
     background-color: #000000;
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
   }
-
+  .logo-1{
+    width: 170px;
+  }
+ .play{
+  margin-right: 7%;
+  font-size: 30px;
+ }
     .price-card {
         width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
         margin: 10px 0; /* Agrega espacio entre las tarjetas */
-        height: 90vh;
+        height: 110vh;
         border-radius: 5%;
         display: flex;
         flex-direction: column;
@@ -324,6 +336,12 @@ main {
      .btn{
         margin-bottom: 10%;
      }
+}
+@media (max-width: 420px) {
+  .music-img{
+    display: flex;
+    width: 100%;
+ }
 }
 @media (max-width: 350px) {
     .logo{
