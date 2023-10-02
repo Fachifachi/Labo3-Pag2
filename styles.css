@@ -178,18 +178,23 @@ main {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  position: absolute;
+  position:absolute;
   top: -10%;
   right: -1%;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white; /* Color del ícono */
   font-size: 24px; /* Tamaño del ícono */
 }
-
+.highlighted .btn{
+  margin-right: -33px;
+ 
+  font-size: 20px;
+}
  .btn {
+  align-items: center;
+
     text-decoration: none;
     background-color: black;
     color: white;
@@ -197,7 +202,7 @@ main {
     border-radius: 20px; /* Ajusta el valor según el radio de borde deseado */
     padding: 10px 20px; /* Ajusta el padding según el tamaño deseado */
     cursor: pointer;
-    width: 50%;
+   
     font-size: 20px;
     transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
 }
