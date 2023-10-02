@@ -232,7 +232,7 @@ main {
 @media (max-width: 1120px) {
 
   .music-img-pc{
-    margin-left: 1%;
+    display: none;
   }
 
 }
