@@ -159,6 +159,7 @@ main {
     justify-items: center;
     text-align: left;;
     font-size: 25px;
+    font-family: 'Roboto', sans-serif;
 
  }
  .d-block{
@@ -202,7 +203,7 @@ main {
     border-radius: 20px; /* Ajusta el valor según el radio de borde deseado */
     padding: 10px 20px; /* Ajusta el padding según el tamaño deseado */
     cursor: pointer;
-   
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
 }
@@ -317,6 +318,9 @@ main {
   right: -4%;
   z-index: 1;
 
+}
+.btn {
+  width: 70%;
 }
     .price-card {
         width: 100%; /* Las tarjetas ocuparán todo el ancho disponible */
