@@ -160,23 +160,12 @@ main {
  .d-block{
     width: 100%;
  }
- .price-card.recommended {
-    border: 2px solid #1ED760; /* Borde de color naranja */
-    box-shadow: 0 0 10px rgba(235, 233, 231, 0.5); /* Sombra de color naranja */
+ .price-card.highlighted {
+ 
+  
+  box-shadow: 0 0 10px #1ED760; /* Agrega una sombra amarilla (o el color que desees) */
 }
 
-/* Estilos para la etiqueta "Recomendado" */
-.recommended-label {
-    background-color:  #1ED760; /* Fondo de color naranja */
-    color: white;
-    font-weight: bold;
-    padding: 5px 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border-radius: 20px;
-    z-index: 1;
-}
  .btn {
     text-decoration: none;
     background-color: black;
@@ -195,14 +184,15 @@ main {
     background-color: white;
     color: black;
 }
+
 .footer {
     background-color: #000000;
     color: white;
   
     display: flex;
     justify-content: space-between;
-   padding: 4% 7% 0% 7%;
-   margin: 0 7% 0 7%S 0;
+   padding: 4% 7% 10% 7%;
+   margin: 0 7% 0 7% 0;
 }
 
 .footer-section {
@@ -274,7 +264,7 @@ main {
         left: 0;
       }
       .header ul a:hover {
-        background-color: #2c8eec;
+        background-color: #1ED760;
       }
         .header nav {
          display: flex;
@@ -315,7 +305,7 @@ main {
         justify-items: center;
         text-align: center;
         font-size: 25px;
-        margin: 10% 0 0 0;
+        margin: 10% 0 5% 0;
      }
      .music-img{
         display: flex;
