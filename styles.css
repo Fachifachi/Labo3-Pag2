@@ -152,7 +152,7 @@ p {
   /* Centra verticalmente el contenido */
   margin: auto;
   width: 20%;
-  height: 100%;
+  
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -183,8 +183,8 @@ p {
   justify-content: center;
   /* Centra verticalmente el contenido */
   margin: auto;
-  width: 30%;
-  height: 30%;
+  width: 20%;
+
   align-items: center;
   justify-items: center;
   text-align: left;
@@ -291,7 +291,21 @@ transition: 0.7s;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   transition: background-color 0.3s, color 0.3s;
+  
   /* Transición suave para el hover */
+}
+.text-center-btn{
+  align-items: center;
+  text-decoration: none;
+
+  color: white;
+  border: none;
+  border-radius: 20px;
+  /* Ajusta el valor según el radio de borde deseado */
+  padding: 10px 20px;
+  /* Ajusta el padding según el tamaño deseado */
+  transition: background-color 0.3s, color 0.3s;
+  right: 100px;
 }
 
 
@@ -499,6 +513,7 @@ font-size: 25px;
   }
   .btn {
     width: 70%;
+    
   }
 
 
@@ -527,18 +542,19 @@ font-size: 25px;
     justify-content: center;
     /* Centra verticalmente el contenido */
     width: 100%;
-    height: 100%;
     align-items: center;
     justify-items: center;
     text-align: center;
     font-size: 25px;
-    margin: 10% 0 5% 0;
+    margin:0;
+    font-size: 300%;
+   
   }
 
   .music-img {
     width: 100%;
     display: flex;
-    width: 40vh;
+    width: 50vh;
   }
 
   .music-img-pc {
@@ -552,7 +568,7 @@ font-size: 25px;
     /* Cambia la dirección de flexión a columna */
     justify-content: center;
     /* Centra verticalmente el contenido */
-    margin: auto;
+    margin: 0 0 0 0;
     font-size: 30px;
     width: 80%;
     text-align: left;
@@ -560,10 +576,37 @@ font-size: 25px;
 
   .btn {
     margin: 0 0 0 0;
+    align-items: center;
+  width: 80%;
+font-size: 40px;
+    height: 20%;
+    align-items: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    transition: background-color 0.3s, color 0.3s;
+
+
   }
 
 
+  .text-center-btn
+  {
+width: 70%;
+align-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: auto;
+   
 
+  }
   .highlighted .btn {
     margin-right: 0;
     font-size: 20px;
@@ -572,22 +615,81 @@ font-size: 25px;
 }
 
 @media (max-width: 420px) {
+  .price-card {
+    width: 100%;
+    /* Las tarjetas ocuparán todo el ancho disponible */
+    margin: 10px 0;
+    /* Agrega espacio entre las tarjetas */
+    height: 90vh;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    transition: none;
+
+  }
   .music-img {
     display: flex;
     width: 100%;
   }
+  .text-center {
+    display: flex;
+    flex-direction: column;
+    /* Cambia la dirección de flexión a columna */
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+    width: 100%;
 
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 0 0 0;
+    font-size: 300%;
+   
+  }
+ 
   .text-secondary-1,
   .text-secondary-2 {
     font-size: 25px;
 
-    margin-bottom: 0px;
-  }
   
+  }
+  .text-center-btn
+  {
+    width: 70%;
+    align-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        border-radius: 20px;
+        margin: 0 0 0 0;
+        margin-top: 20px;
+       
+    
+      }
 
 }
 
 @media (max-width: 350px) {
+  .text-center {
+  
+    font-size: 200%;
+    
+   
+  }
+  .price-card {
+    width: 100%;
+    /* Las tarjetas ocuparán todo el ancho disponible */
+    margin: 10px 0;
+    /* Agrega espacio entre las tarjetas */
+    height: 85vh;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    transition: none;
+
+  }
+
   .logo {
     width: 50%;
     padding-right: 40%;
