@@ -314,7 +314,9 @@ transition: 0.7s;
   background-color: white;
   color: black;
 }
-
+.plan{
+  display: none;
+}
 .footer {
   background-color: #000000;
   color: white;
@@ -513,7 +515,7 @@ font-size: 25px;
   }
   .btn {
     width: 70%;
-    
+ 
   }
 
 
@@ -522,11 +524,12 @@ font-size: 25px;
     /* Las tarjetas ocuparán todo el ancho disponible */
     margin: 10px 0;
     /* Agrega espacio entre las tarjetas */
-    height: 110vh;
-    border-radius: 5%;
+    height: 100%;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     transition: none;
+    padding-bottom: 10%;
 
   }
 
@@ -548,18 +551,23 @@ font-size: 25px;
     font-size: 25px;
     margin:0;
     font-size: 300%;
+    
+    
    
   }
-
+.d-block .fa-regular,.fa-circle-check{
+  color: #1ED760;
+}
   .music-img {
     width: 100%;
     display: flex;
-    width: 50vh;
+    width: 80%;
   }
 
   .music-img-pc {
     display: none;
   }
+ 
 
   .text-secondary-1,
   .text-secondary-2 {
@@ -573,7 +581,15 @@ font-size: 25px;
     width: 80%;
     text-align: left;
   }
-
+  .plan-pc{
+    display: none;
+  }
+  .plan{
+    display: flex;
+    margin: 3 0 -10px 0 ;
+    margin-bottom: -20px;
+ 
+  }
   .btn {
     margin: 0 0 0 0;
     align-items: center;
@@ -591,6 +607,7 @@ font-size: 40px;
     font-size: 30px;
     transition: background-color 0.3s, color 0.3s;
 
+    
 
   }
 
@@ -620,11 +637,12 @@ align-content: center;
     /* Las tarjetas ocuparán todo el ancho disponible */
     margin: 10px 0;
     /* Agrega espacio entre las tarjetas */
-    height: 90vh;
-    border-radius: 5%;
+    height: 110%;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     transition: none;
+    padding-bottom: 5%;
 
   }
   .music-img {
@@ -647,7 +665,12 @@ align-content: center;
     font-size: 300%;
    
   }
- 
+  .plan{
+    display: flex;
+    margin: 3 0 -10px 0 ;
+    margin-bottom: -20px;
+    font-size: 40px;
+  }
   .text-secondary-1,
   .text-secondary-2 {
     font-size: 25px;
@@ -677,16 +700,29 @@ align-content: center;
     
    
   }
+  .plan{
+    display: flex;
+    margin: 3 0 -10px 0 ;
+    margin-bottom: -20px;
+    font-size: 30px;
+  }
+  .text-secondary-1,
+  .text-secondary-2 {
+    font-size: 25px;
+
+  
+  }
   .price-card {
     width: 100%;
     /* Las tarjetas ocuparán todo el ancho disponible */
     margin: 10px 0;
     /* Agrega espacio entre las tarjetas */
-    height: 85vh;
-    border-radius: 5%;
+    height: 100%;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     transition: none;
+    padding-bottom: 5%;
 
   }
 
