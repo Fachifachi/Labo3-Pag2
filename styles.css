@@ -210,13 +210,7 @@ p {
 
   /* Ajusta el relleno según tus necesidades */
 }
-.highlighted-card {
-  background-color: #1ED760; /* Cambia el color de fondo */
-  border: 2px solid #1ED760; /* Agrega un borde */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
-  color: white; /* Cambia el color del texto para que sea legible en el fondo verde */
-  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al pasar el mouse */
-}
+
 /* Estilo para el círculo */
 
   .highlighted::before {
@@ -231,7 +225,7 @@ p {
     justify-content: center;
     color: white;
     top: 35%;
-    border: 2px solid #ffffff; /* Agrega un borde */
+
     right: 98%;
     /* Color del ícono */
   
@@ -244,6 +238,29 @@ p {
     cursor: pointer;
   }
 
+  .gg {
+    content: "\2b";
+    /* Código del ícono "crown" en Font Awesome 6 */
+    font-family: "Font Awesome 6 Free";
+    /* Nombre de la fuente de íconos */
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: -16%;
+
+    right: -2%;
+    /* Color del ícono */
+  
+    /* Tamaño del ícono */
+
+    width: 90px;
+    height: 90px;
+
+    cursor: pointer;
+  }
 .highlighted btn{
   font-size: 20px;
 }
@@ -256,6 +273,7 @@ p {
   background-color: #1ED760; /* Cambia el color de fondo del círculo */
 }
 .price-card:nth-child(3):hover .highlighted::before {
+transition: 0.7s;
   content: "\f144"; /* Cambia el contenido del ícono */
   background-color: #1ED760; /* Cambia el color de fondo del círculo */
 }
@@ -363,6 +381,29 @@ font-size: 25px;
 .highlighted{
  display: none;
 }
+.gg {
+  content: "\2b";
+  /* Código del ícono "crown" en Font Awesome 6 */
+  font-family: "Font Awesome 6 Free";
+  /* Nombre de la fuente de íconos */
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: -10%;
+
+  right: -2%;
+  /* Color del ícono */
+
+  /* Tamaño del ícono */
+
+  width: 70px;
+  height: 70px;
+
+  cursor: pointer;
+}
 }
 @media (max-width: 768px) {
   .footer {
@@ -453,7 +494,25 @@ font-size: 25px;
     top: 15%;
     right: 3%;
   }
+  .gg {
+    content: "\2b";
+    /* Código del ícono "crown" en Font Awesome 6 */
+    font-family: "Font Awesome 6 Free";
+    /* Nombre de la fuente de íconos */
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: -0%;
+    right: -3%;
 
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+  }
   .btn {
     width: 70%;
   }
@@ -539,6 +598,29 @@ font-size: 25px;
     font-size: 25px;
 
     margin-bottom: 0px;
+  }
+  .gg {
+    content: "\2b";
+    /* Código del ícono "crown" en Font Awesome 6 */
+    font-family: "Font Awesome 6 Free";
+    /* Nombre de la fuente de íconos */
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: -0%;
+
+    right: -5%;
+    /* Color del ícono */
+  
+    /* Tamaño del ícono */
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
   }
 
 }
