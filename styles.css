@@ -152,7 +152,7 @@ p {
   /* Centra verticalmente el contenido */
   margin: auto;
   width: 20%;
-  
+
   align-items: center;
   justify-items: center;
   text-align: center;
@@ -213,70 +213,81 @@ p {
 
 /* Estilo para el círculo */
 
-  .highlighted::before {
-    content: "\2b";
-    /* Código del ícono "crown" en Font Awesome 6 */
-    font-family: "Font Awesome 6 Free";
-    /* Nombre de la fuente de íconos */
-    border-radius: 50%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    top: 35%;
+.highlighted::before {
+  content: "\2b";
+  /* Código del ícono "crown" en Font Awesome 6 */
+  font-family: "Font Awesome 6 Free";
+  /* Nombre de la fuente de íconos */
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: 35%;
 
-    right: 98%;
-    /* Color del ícono */
-  
-    /* Tamaño del ícono */
+  right: 98%;
+  /* Color del ícono */
+
+  /* Tamaño del ícono */
   font-size: 25px;
-    width: 70px;
-    height: 70px;
-  
-    background-color: #1ED760;
-    cursor: pointer;
-  }
+  width: 70px;
+  height: 70px;
 
-  .gg {
-    content: "\2b";
-    /* Código del ícono "crown" en Font Awesome 6 */
-    font-family: "Font Awesome 6 Free";
-    /* Nombre de la fuente de íconos */
-    border-radius: 50%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    top: -16%;
+  background-color: #1ED760;
+  cursor: pointer;
+}
 
-    right: -2%;
-    /* Color del ícono */
-  
-    /* Tamaño del ícono */
+.gg {
+  content: "\2b";
+  /* Código del ícono "crown" en Font Awesome 6 */
+  font-family: "Font Awesome 6 Free";
+  /* Nombre de la fuente de íconos */
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: -16%;
 
-    width: 90px;
-    height: 90px;
+  right: -2%;
+  /* Color del ícono */
 
-    cursor: pointer;
-  }
-.highlighted btn{
+  /* Tamaño del ícono */
+
+  width: 90px;
+  height: 90px;
+
+  cursor: pointer;
+}
+
+.highlighted btn {
   font-size: 20px;
 }
+
 .price-card:nth-child(1):hover .highlighted::before {
-  content: "\f144"; /* Cambia el contenido del ícono */
-  background-color: #1ED760; /* Cambia el color de fondo del círculo */
+  content: "\f144";
+  /* Cambia el contenido del ícono */
+  background-color: #1ED760;
+  /* Cambia el color de fondo del círculo */
 }
+
 .price-card:nth-child(2):hover .highlighted::before {
-  content: "\f144"; /* Cambia el contenido del ícono */
-  background-color: #1ED760; /* Cambia el color de fondo del círculo */
+  content: "\f144";
+  /* Cambia el contenido del ícono */
+  background-color: #1ED760;
+  /* Cambia el color de fondo del círculo */
 }
+
 .price-card:nth-child(3):hover .highlighted::before {
-transition: 0.7s;
-  content: "\f144"; /* Cambia el contenido del ícono */
-  background-color: #1ED760; /* Cambia el color de fondo del círculo */
+  transition: 0.7s;
+  content: "\f144";
+  /* Cambia el contenido del ícono */
+  background-color: #1ED760;
+  /* Cambia el color de fondo del círculo */
 }
+
 .btn {
   align-items: center;
   text-decoration: none;
@@ -291,10 +302,11 @@ transition: 0.7s;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   transition: background-color 0.3s, color 0.3s;
-  
+
   /* Transición suave para el hover */
 }
-.text-center-btn{
+
+.text-center-btn {
   align-items: center;
   text-decoration: none;
 
@@ -314,9 +326,11 @@ transition: 0.7s;
   background-color: white;
   color: black;
 }
-.plan{
+
+.plan {
   display: none;
 }
+
 .footer {
   background-color: #000000;
   color: white;
@@ -358,69 +372,74 @@ transition: 0.7s;
   padding-right: 10%;
 
 }
+
 @media (max-width: 1600px) {
-  
-  
-.highlighted::before {
-  content: "\2b";
-  /* Código del ícono "crown" en Font Awesome 6 */
-  font-family: "Font Awesome 6 Free";
-  /* Nombre de la fuente de íconos */
-  border-radius: 50%;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  top: 36%;
-  right: 98%;
-  /* Color del ícono */
 
-  /* Tamaño del ícono */
-font-size: 25px;
-  width: 50px;
-  height: 50px;
 
-  background-color: #1ED760;
+  .highlighted::before {
+    content: "\2b";
+    /* Código del ícono "crown" en Font Awesome 6 */
+    font-family: "Font Awesome 6 Free";
+    /* Nombre de la fuente de íconos */
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: 36%;
+    right: 98%;
+    /* Color del ícono */
+
+    /* Tamaño del ícono */
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+
+    background-color: #1ED760;
+  }
 }
-}
+
 @media (max-width: 1120px) {
 
   .music-img-pc {
     display: none;
   }
 
-  
+
 
 }
+
 @media (max-width: 1040px) {
-.highlighted{
- display: none;
+  .highlighted {
+    display: none;
+  }
+
+  .gg {
+    content: "\2b";
+    /* Código del ícono "crown" en Font Awesome 6 */
+    font-family: "Font Awesome 6 Free";
+    /* Nombre de la fuente de íconos */
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: -10%;
+
+    right: -2%;
+    /* Color del ícono */
+
+    /* Tamaño del ícono */
+
+    width: 70px;
+    height: 70px;
+
+    cursor: pointer;
+  }
 }
-.gg {
-  content: "\2b";
-  /* Código del ícono "crown" en Font Awesome 6 */
-  font-family: "Font Awesome 6 Free";
-  /* Nombre de la fuente de íconos */
-  border-radius: 50%;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  top: -10%;
 
-  right: -2%;
-  /* Color del ícono */
-
-  /* Tamaño del ícono */
-
-  width: 70px;
-  height: 70px;
-
-  cursor: pointer;
-}
-}
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -434,201 +453,216 @@ font-size: 25px;
 
 @media (max-width: 870px) {
 
-  .header label {
-    display: block;
-  }
+.header label {
+  display: block;
+}
 
-  .header ul {
-    font-size: 1.2em;
-    position: absolute;
-    left: -100%;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    background-color: #000000;
-    gap: 2em;
-    top: 50px;
-    width: 70%;
-    height: calc(100vh - 60px);
-    transition: 0.2s;
+.header ul {
+  font-size: 1.2em;
+  position: absolute;
+  left: -100%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: #000000;
+  gap: 2em;
+  top: 50px;
+  width: 70%;
+  height: calc(100vh - 60px);
+  transition: 0.2s;
 
-  }
+}
 
-  .pepito {
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-  }
+.pepito {
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
 
-  .header ul li a .active {
-    margin-left: 20%;
-  }
+.header ul li a .active {
+  margin-left: 20%;
+}
 
-  .header input[type="checkbox"]:checked~ul {
-    left: 0;
-  }
+.header input[type="checkbox"]:checked~ul {
+  left: 0;
+}
 
-  .header nav {
-    display: flex;
-    position: relative;
-    top: 0;
-    /* Alinea el navbar en la parte superior */
-    background-color: #000000;
-    z-index: 1000;
-    /* Asegura que esté por encima de otros elementos */
+.header nav {
+  display: flex;
+  position: relative;
+  top: 0;
+  /* Alinea el navbar en la parte superior */
+  background-color: #000000;
+  z-index: 1000;
+  /* Asegura que esté por encima de otros elementos */
 
-  }
+}
 
-  .logo-1 {
-    width: 170px;
-  }
+.logo-1 {
+  width: 170px;
+}
 
-  .play {
-    margin-right: 7%;
-    font-size: 30px;
-  }
+.play {
+  margin-right: 7%;
+  font-size: 30px;
+}
 
-  .highlighted::before {
+.highlighted::before {
 
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    position: absolute;
- 
-    right: -4%;
-    z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
 
-  }
+  right: -4%;
+  z-index: 1;
 
-  .highlighted {
-    background-color: white;
-    /* Fondo blanco */
-    position: fixed;
-    /* Para posicionar el círculo dentro de la tarjeta */
-    top: 15%;
-    right: 3%;
-  }
-  .gg {
-   display: none;
-  }
-  .btn {
-    width: 70%;
- 
-  }
+}
+
+.highlighted {
+  background-color: white;
+  /* Fondo blanco */
+  position: fixed;
+  /* Para posicionar el círculo dentro de la tarjeta */
+  top: 15%;
+  right: 3%;
+}
+
+.gg {
+  display: none;
+}
+
+.btn {
+  width: 70%;
+
+}
 
 
-  .price-card {
-    width: 100%;
-    /* Las tarjetas ocuparán todo el ancho disponible */
-    margin: 10px 0;
-    /* Agrega espacio entre las tarjetas */
-    height: 100%;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    transition: none;
-    padding-bottom: 10%;
+.price-card {
+  width: 100%;
+  /* Las tarjetas ocuparán todo el ancho disponible */
+  margin: 10px 0;
+  /* Agrega espacio entre las tarjetas */
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: none;
+  padding-bottom: 10%;
 
-  }
+}
 
-  .price-card:hover {
-    /* Aplica un aumento de escala al pasar el mouse */
-    transform: none;
-  }
+.price-card:hover {
+  /* Aplica un aumento de escala al pasar el mouse */
+  transform: none;
+}
 
-  .text-center {
-    display: flex;
-    flex-direction: column;
-    /* Cambia la dirección de flexión a columna */
-    justify-content: center;
-    /* Centra verticalmente el contenido */
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    font-size: 25px;
-    margin:0;
-    font-size: 300%;
-    
-    
-   
-  }
-.d-block .fa-regular,.fa-circle-check{
+.text-center {
+  display: flex;
+  flex-direction: column;
+  /* Cambia la dirección de flexión a columna */
+  justify-content: center;
+  /* Centra verticalmente el contenido */
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  font-size: 300%;
+
+
+
+}
+
+.d-block .fa-regular,
+.fa-circle-check {
   color: #1ED760;
 }
-  .music-img {
-    width: 100%;
-    display: flex;
-    width: 80%;
-  }
 
-  .music-img-pc {
-    display: none;
-  }
- 
-
-  .text-secondary-1,
-  .text-secondary-2 {
-    display: flex;
-    flex-direction: column;
-    /* Cambia la dirección de flexión a columna */
-    justify-content: center;
-    /* Centra verticalmente el contenido */
-    margin: 0 0 0 0;
-    font-size: 30px;
-    width: 80%;
-    text-align: left;
-  }
-  .plan-pc{
-    display: none;
-  }
-  .plan{
-    display: flex;
-    margin: 3 0 -10px 0 ;
-    margin-bottom: -20px;
- 
-  }
-  .btn {
-    margin: 0 0 0 0;
-    align-items: center;
+.music-img {
+  width: 100%;
+  display: flex;
   width: 80%;
-font-size: 40px;
-    height: 20%;
-    align-items: center;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    transition: background-color 0.3s, color 0.3s;
+}
 
-    
-
-  }
+.music-img-pc {
+  display: none;
+}
 
 
-  .text-center-btn
-  {
-width: 70%;
-align-content: center;
-    align-items: center;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    border-radius: 20px;
-    margin: auto;
-   
+.text-secondary-1,
+.text-secondary-2 {
+  display: flex;
+  flex-direction: column;
+  /* Cambia la dirección de flexión a columna */
+  justify-content: center;
+  /* Centra verticalmente el contenido */
+  margin: 0 0 0 0;
+  font-size: 30px;
+  width: 80%;
+  text-align: left;
+}
 
-  }
-  .highlighted .btn {
-    margin-right: 0;
-    font-size: 20px;
-    width: 80%;
-  }
+.plan-pc {
+  display: none;
+}
+
+.plan {
+  display: flex;
+  margin: 3 0 -10px 0;
+  margin-bottom: -20px;
+
+}
+
+.btn {
+  margin: 0 0 0 0;
+  align-items: center;
+  width: 80%;
+  font-size: 40px;
+  height: 20%;
+  align-items: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  transition: background-color 0.3s, color 0.3s;
+
+
+
+}
+
+
+.text-center-btn {
+  width: 70%;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 30px;
+
+
+}
+
+.highlighted .btn {
+  margin-right: 0;
+  font-size: 20px;
+  width: 80%;
+}
+
+.plan-family {
+  display: flex;
+  margin: 3 0 5px 0;
+
+}
 }
 
 @media (max-width: 420px) {
@@ -645,10 +679,12 @@ align-content: center;
     padding-bottom: 5%;
 
   }
+
   .music-img {
     display: flex;
     width: 100%;
   }
+
   .text-center {
     display: flex;
     flex-direction: column;
@@ -663,55 +699,60 @@ align-content: center;
     font-size: 25px;
     margin: 0 0 0 0;
     font-size: 300%;
-   
+
   }
-  .plan{
+
+  .plan {
     display: flex;
-    margin: 3 0 -10px 0 ;
+    margin: 3 0 -10px 0;
     margin-bottom: -20px;
     font-size: 40px;
   }
+
   .text-secondary-1,
   .text-secondary-2 {
     font-size: 25px;
 
-  
+
   }
-  .text-center-btn
-  {
+
+  .text-center-btn {
     width: 70%;
     align-content: center;
-        align-items: center;
-        text-align: center;
-        color: rgb(0, 0, 0);
-        border-radius: 20px;
-        margin: 0 0 0 0;
-        margin-top: 20px;
-       
-    
-      }
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    margin: 0 0 0 0;
+    margin-top: 20px;
+
+
+  }
 
 }
 
 @media (max-width: 350px) {
   .text-center {
-  
+
     font-size: 200%;
-    
-   
+
+
   }
-  .plan{
+
+  .plan {
     display: flex;
-    margin: 3 0 -10px 0 ;
+    margin: 3 0 -10px 0;
     margin-bottom: -20px;
     font-size: 30px;
   }
+
   .text-secondary-1,
   .text-secondary-2 {
     font-size: 25px;
 
-  
+
   }
+
   .price-card {
     width: 100%;
     /* Las tarjetas ocuparán todo el ancho disponible */
