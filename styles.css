@@ -663,6 +663,9 @@ p {
   margin: 3 0 5px 0;
 
 }
+.price-text{
+  margin-top: -10%;
+}
 }
 
 @media (max-width: 420px) {
