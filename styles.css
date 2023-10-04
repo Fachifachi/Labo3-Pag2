@@ -174,7 +174,12 @@ p {
 
 
 }
-
+.text-secondary-movil{
+  display: none;
+}
+.plan-family{
+  display: none;
+}
 .text-secondary-1,
 .text-secondary-2 {
   display: flex;
@@ -508,7 +513,15 @@ p {
   margin-right: 7%;
   font-size: 30px;
 }
-
+.playlist{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 80%;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+}
 .highlighted::before {
 
   width: 80px;
@@ -520,7 +533,16 @@ p {
   z-index: 1;
 
 }
+.text-secondary-movil{
+  display: flex;
+ margin-bottom: 5%;
 
+}
+.text-secondary-movil-family{
+  display: flex;
+ margin-bottom: 5%;
+ margin-top: 5%;
+}
 .highlighted {
   background-color: white;
   /* Fondo blanco */
@@ -660,14 +682,38 @@ p {
 
 .plan-family {
   display: flex;
-  margin: 3 0 5px 0;
+  margin: 10% 0 5px 0;
 
 }
 .price-text{
-  margin-top: -10%;
+display: none;
 }
+.text-secondary{
+  display: none;
 }
 
+.price-card.highlighted-card {
+  position: relative;
+}
+
+.price-card.highlighted-card::before {
+  content: "Destacado";
+  position: absolute;
+  top: 0; /* Coloca la etiqueta en la parte superior */
+  left: 0;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: 5%; /* Altura de la barra */
+  background-color: #1ED760; /* Color de fondo de la barra */
+  color: white; /* Color del texto de la etiqueta */
+  font-size: 30px; /* Tamaño del texto de la etiqueta */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* Evitar el desbordamiento del texto */
+  z-index: 1; /* Asegura que la barra esté por encima del contenido de la tarjeta */
+}
+}
 @media (max-width: 420px) {
   .price-card {
     width: 100%;
@@ -731,7 +777,11 @@ p {
 
 
   }
-
+  .plan-family {
+    display: flex;
+    margin: 15% 0 5px 0;
+  
+  }
 }
 
 @media (max-width: 350px) {
